@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		1801500B2ED8F06800E5E7BC /* CodeEditor in Frameworks */ = {isa = PBXBuildFile; productRef = 1801500A2ED8F06800E5E7BC /* CodeEditor */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		18014FE02ED8D2D200E5E7BC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1801500B2ED8F06800E5E7BC /* CodeEditor in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +117,7 @@
 			);
 			name = CodePocket;
 			packageProductDependencies = (
+				1801500A2ED8F06800E5E7BC /* CodeEditor */,
 			);
 			productName = CodePocket;
 			productReference = 18014FD22ED8D2D100E5E7BC /* CodePocket.app */;
@@ -195,6 +201,9 @@
 			);
 			mainGroup = 18014FC92ED8D2D100E5E7BC;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				180150092ED8F06800E5E7BC /* XCRemoteSwiftPackageReference "CodeEditor" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 18014FD32ED8D2D100E5E7BC /* Products */;
 			projectDirPath = "";
@@ -392,7 +401,7 @@
 		18014FF42ED8D2D200E5E7BC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = codePocket;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -403,6 +412,9 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Code Pocket";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_LSUIElement = NO;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -424,7 +436,7 @@
 		18014FF52ED8D2D200E5E7BC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = codePocket;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -435,6 +447,9 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Code Pocket";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_LSUIElement = NO;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -573,6 +588,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		180150092ED8F06800E5E7BC /* XCRemoteSwiftPackageReference "CodeEditor" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ZeeZide/CodeEditor.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1801500A2ED8F06800E5E7BC /* CodeEditor */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 180150092ED8F06800E5E7BC /* XCRemoteSwiftPackageReference "CodeEditor" */;
+			productName = CodeEditor;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 18014FCA2ED8D2D100E5E7BC /* Project object */;
 }
